@@ -7,5 +7,120 @@ html {
 }
 
 body {
+  width: 144rem;
+  margin: 0 auto;
   font-size: 1.6rem;
+  font-family: "Sora", sans-serif;
+}
+
+:root {
+  --color-xanhNhat: #2e80ce;
+  --color-xanhDam: #10375c;
+  --color-textP: #575f66;
+  --color-trang: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+
+.btn {
+  width: 20.5rem;
+  height: 6rem;
+  background-color: var(--color-xanhNhat);
+  border-radius: 3rem;
+  border: none;
+  color: var(--color-trang);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.btn:hover {
+  background-color: var(--color-trang);
+  color: var(--color-xanhNhat);
+  cursor: pointer;
+  outline: 1px solid var(--color-xanhNhat);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.h2-text {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 6rem;
+  color: var(--color-xanhDam);
+}
+
+.p-text {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: var(--color-textP);
+}
+
+.header {
+  background-color: var(--color-xanhDam);
+}
+
+.nav__logo {
+  cursor: pointer;
+}
+
+.header {
+  position: sticky;
+  top: 10px;
+}
+
+.nav {
+  width: 1170px;
+  max-width: calc(100% - 4.8rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__link,
+.nav__btn--login {
+  color: #c9d2da;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  padding: 2rem;
+}
+
+.nav__btn--signup {
+  display: inline-block;
+  width: 10.4rem;
+  height: 4.4rem;
+  border-radius: 2.2rem;
+  text-align: center;
+  line-height: 4.4rem;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__link:hover {
+  color: var(--color-trang);
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: var(--color-trang);
+  border-radius: 50%;
+  bottom: 1.2rem;
+  left: 5px;
 }
